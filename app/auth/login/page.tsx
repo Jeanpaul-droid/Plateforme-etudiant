@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Footer from '@/app/components/Footer';
 import { LogIn, MoveLeft, UserRoundKey } from 'lucide-react';
 
-export default async function Page() {
+const Page() => {
     const router = useRouter();
     const searchParams = useSearchParams();
     const role = searchParams.get("role"); // récupère le rôle depuis l'URL
